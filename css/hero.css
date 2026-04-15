@@ -11,7 +11,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(./img/sports-tools.jpg);
+    background-image: linear-gradient(rgba(0,0,0)) url(./img/sports-tools.jpg);
     background-position: center;
     background-size: cover;
 }
