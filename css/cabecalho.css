@@ -11,6 +11,7 @@
 
 .cabecalho__li__a{
     display: inline-block;
+    width: 10vw;
     background-color: #a9a9a9;
     text-align: center;
     width: 10vw;
