@@ -24,7 +24,9 @@
 
 .cabecalho__a--active{
     background-color: #000000;
+    float: right;
     color: #fff;
+    
 }
 
 .cabecalho__li--active{
