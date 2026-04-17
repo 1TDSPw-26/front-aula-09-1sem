@@ -14,7 +14,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 
-    background-image: linear-gradient(rgba(0,0,0,0.5)) , url("../img/img-01-fundo-hero.png");
+    background-image: linear-gradient(rgba(0,0,0,0.5)) , url("../img/img-01-fundo-hero.jpg");
     background-position: center;
     background-size: cover;
 
