@@ -1,6 +1,9 @@
+
 .cabecalho{
     width: 100%;
     height: auto;
+    position: absolute;
+    z-index: 10;
 }
 
 .cabecalho__li{
@@ -11,25 +14,24 @@
 .cabecalho__a{
     display: inline-block;
     text-align: center;
-    width: clamp(15rem, 8vw, 20rem); /* 100px, 20% da largura da viewport, 150px | minímo,  ideal, maximo*/
-
-    background-color: #a9a3a3;
-    padding: 1rem;
+    width: clamp(15rem,8vw,20rem);
+    background-color: var(--bg-dark-med-gray);
+    padding:1rem;
     border-radius: 10px;
+    border: 0.2rem solid var(--text-main);
 }
 
-.cabecalho__li:hover {
+.cabecalho__a:hover {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.cabecalho__a--active{
     background-color: #000000;
-    color: #fff;
+    color: var(--text-main);
 }
 
-.cabecalho__li--active {
-    float: right;
-    margin-right: 5rem;
-}
-
-.cabecalho__a--active {
-    float: right;
-    background-color: #000000;
-    color: #fff
+.cabecalho__li--active{
+   float: right;
+   margin-right: 5rem;
 }
