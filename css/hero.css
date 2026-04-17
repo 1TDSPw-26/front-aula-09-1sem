@@ -49,6 +49,7 @@
 }
 
 .hero__btn:hover{
-    background-color: var(--primary-hover);
+    background-color:var(--bg-dark);
+    color: var(--text-main);
     
 }
