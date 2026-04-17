@@ -34,7 +34,7 @@
     display: block;
     width: 10%;
     padding: 2rem;
-    background-color: var(--primary);
+    background-color:var(--bg-dark-med-gray);
     color: var(--text-main);
     text-align: center;
     margin: 0 auto;

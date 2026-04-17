@@ -2,6 +2,8 @@
 .cabecalho{
     height: 100%;
     width: 100vw;
+    position: absolute;
+    z-index: 10;
 }
 
 .cabecalho__li{
@@ -13,22 +15,27 @@
     display: inline-block;
     text-align: center;
     width: clamp(15rem, 8vw, 20rem);
-    background-color: #a9a3a3;
+    background-color: var(--bg-dark-med-gray);
     padding: 1rem;
     border-radius: 10px;
 }
 
 .cabecalho__li__a:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
 }
 
 .cabecalho__li--active {
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
 }
 
 .cabecalho__a--active {
     float: right;
     margin-right: 5rem;
+}
+
+.hero__btn:hover{
+        background-color: var(--bg-dark);
+        color: var(--text-main);
 }
