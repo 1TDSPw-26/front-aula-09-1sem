@@ -13,6 +13,7 @@
 
 .cabecalho__a{
     display: inline-block;
+    text-align: center;
     width: clamp(15rem,8vw,20rem);
     background-color: var(--bg-dark-med-gray);
     padding:1rem;
@@ -33,9 +34,65 @@
 .cabecalho__li--active{
    float: right;
    margin-right: 5rem;
-    margin-right: 1%;
 }
 
-.cabecalho__li_a{
-    display: inline-block;
+/*
+ Como é um breakpoint:
+ Ex: @media (max-width: 768px){
+    .cabecalho__li{
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .cabecalho__a{
+        width: 100%;
+    }
+    .cabecalho__li--active{
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .cabecalho__li{
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .cabecalho__a{
+        width: 100%;
+    }
+    .cabecalho__li--active{
+        float: none;
+        margin-right: 0;
+    }
+}
+  
+*/
+
+@media (min-width: 320px){
+
+    .cabecalho{
+    position: static;
+}
+
+   .cabecalho__ul{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.cabecalho__li--active{
+   float: none;
+}
+
+.cabecalho__li{
+    margin: 0.1rem 0.5rem;
+}
+
+.cabecalho__a{
+    width: clamp(7rem,8vw,10rem);
+    padding:1rem;
+    font-size: 1.2rem;
+    font-size: 1.2rem;
+}
+
 }
