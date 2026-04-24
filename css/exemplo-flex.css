@@ -45,6 +45,7 @@ body{
 .item-1:hover{
     background-color: #ede20d;
     align-self: end;
+    width: 100px;
 }
 
 .item-2{
