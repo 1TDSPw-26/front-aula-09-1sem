@@ -14,11 +14,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .hero__title{
     font-size: clamp(2.5rem,5vw, 4rem);
     text-align: center;
+    margin: 1.5rem;
 }
 
 .hero__text{
