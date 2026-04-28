@@ -1,26 +1,25 @@
 .hero {
   background-color: var(--bg-dark);
   width: 100%;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   color: var(--text-main);
 }
 
 .hero__container {
   width: 100%;
-  min-height: 100vh;
-  height: auto;
-  /*top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);*/
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7)), url(../img/img-01-fundo-hero.jpg);
+  height: 100%;
+  background-image: linear-gradient(rgba(51, 51, 88, 0.7)),
+    url("../img/img-01-fundo-hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
+
+  align-content: start;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__title {
@@ -30,29 +29,52 @@
 
 .hero__text {
   text-align: justify;
-  margin: 2rem;
+  margin: 1.5rem;
   line-height: 4.5rem;
   font-size: 2.5rem;
-  max-height: 30%;
 }
 
 .hero__btn {
   display: block;
   margin: 0 auto;
   width: 10%;
-  background-color: var(--bg-dark-med);
   height: 7rem;
+  background-color: var(--bg-dark-med-gray);
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   border-radius: 10px;
   padding: 2rem;
-  color: var(--text-main);
   border: 0.2rem solid var(--text-main);
-
-  transition: background-color 0.3s ease;
 }
 
 .hero__btn:hover {
   background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .hero__text {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  .hero__container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero {
+    height: 40%;
+  }
+
+  .hero__btn {
+    width: 50%;
+    margin: 10% 0 0;
+  }
 }
