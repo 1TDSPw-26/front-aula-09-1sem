@@ -39,6 +39,13 @@ body{
 .item-1{
     background-color: #534f05;
     align-self: start;
+    transition: align-self 0.2s, background-color 0.3s ease-in-out;
+}
+
+.item-1:hover{
+    background-color: #ede20d;
+    align-self: end;
+    width: 100px;
 }
 
 .item-2{

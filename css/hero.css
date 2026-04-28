@@ -14,10 +14,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: center;
 }
 
 .hero__title{
@@ -51,4 +53,33 @@
         color: var(--text-main);
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
 
+    .hero__title{
+    font-size: clamp(4rem,6vw,4rem);
+    
+}
+
+    .hero__text{
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+
+    .hero__container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        
+    
+}
+    .hero{
+    height: 77%;
+    
+}
+    .hero__btn{
+    width: 50%;
+    margin: 10% 0 0;
+}
+
+    
+}
