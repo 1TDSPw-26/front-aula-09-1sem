@@ -15,10 +15,10 @@
   background-repeat: no-repeat;
   padding: 2rem;
 
-  align-content: start;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
   justify-content: center;
 }
 
@@ -55,7 +55,7 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
   .hero__title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(4rem, 6vw, 4rem);
   }
 
   .hero__text {
@@ -70,7 +70,7 @@
   }
 
   .hero {
-    height: 40%;
+    height: 77%;
   }
 
   .hero__btn {
