@@ -1,0 +1,36 @@
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card__title {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.card__button {
+    display: inline-block;
+    background: lime;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
