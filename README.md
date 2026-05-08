@@ -1,2 +1,2 @@
-# front-aula-01-sem
-Aula CSS3 - BOX-MODEL
+# front-aula-04-sem
+Aula CSS3 - Responsividade / @ mediaqueries
