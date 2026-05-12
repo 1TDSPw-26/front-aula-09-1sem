@@ -34,13 +34,16 @@
         <div class="hero__container">
           <h1 class="hero__title">CONTROLE DE ACESSO</h1>
           
+          <div id="msg">
+            
+          </div>
             <form action="#" method="get">
                 <input type="hidden" value="oi" name="msg">
                 <fieldset>
                     <legend>LOGIN</legend>
                     <div>
                         <label for="idEmail">Email</label>
-                        <input type="email" name="email" id="idEmail" placeholder="Digite seu email" required minlength="15" maxlength="150" on>
+                        <input type="email" name="email" id="idEmail" placeholder="Digite seu email" required minlength="15" maxlength="150" on oninvalid="setCustomValidity('Errei')" autocomplete="current-password">
                     </div>
                     <div>
                         <label for="idSenha">Senha</label>
