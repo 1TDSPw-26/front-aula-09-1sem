@@ -1,35 +1,9 @@
-
-//Declarando variaveis
-
-//Declarando com var
-// var nome = "Alê";
-// console.log(nome);
-// //Declarando com let
-// let sobrenome = "Silva";
-// console.log(sobrenome);
-// //Declarando com const
-// const PI = 3.14;
-// console.log(PI);
-
-//Diferença entre var e let
-// var nome = "Alê";
-// let sobrenome = "Silva";
-
-// if(true){
-//     //redeclarando as variaveis:
-//     var nome = "João";
-//     let sobrenome = "Souza";
-// }
-
-// console.log(nome);
-// console.log(sobrenome);
-
-let nr1 = 2;
-let nr2 = "3";
-console.log(nr1 , parseInt(nr2)); //resultado: 2 3
-console.log(nr1 + parseInt(nr2)); //resultado: 5
-
-
+const usuarios = [
+    {Id: 1, email:"email@email.com", senha:"12345", nome:"José das Couves", avatar:"https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {Id: 2, email:"nadir@email.com", senha:"12345", nome:"Nadir das Batatas", avatar:"https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {Id: 3, email:"joel@email.com", senha:"12345", nome:"Joel da Candida", avatar:"https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {Id: 3, email:"email@email.com", senha:"12345", nome:"José das Couves", avatar:"https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+];
 
 const botao = document.getElementById("btnEntrar");
 
@@ -49,7 +23,41 @@ botao.addEventListener("click", function(e){
     console.log( usuario.senha );
 
 
+    const userDoBanco = {
+        email  :  "email@email.com",
+        senha  : "12345",
+        nome   : "José das Couves",
+        avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"
+    }
+
     //Validação de dados do usuário
+    
+    try {
+        if(usuario !== null){
+            if( (usuario.email === userDoBanco.email) && (usuario.senha === userDoBanco.senha) ){
+                alert("Login realizado com sucesso!");
+                
+                const divMsg = document.getElementById("msg")
+
+                divMsg.innerHTML = "<p>Você será redirecionado em cinco segungos...</p>"
+
+                setTimeout( function(){
+                    window.location.href = "../index.html";
+                }, 5000);
+            }else{
+                throw new Error("Email ou senha incorretos.")
+            }
+        } else{
+            throw new Error("Usuário não encontrado.")
+        }
+        
+    } catch (error) {
+        console.error(error);
+        alert(error)
+    }
+
+
+
     //Crie um novo objeto com as propriedades email e senha.
     //Compare contra os dados do usuário.
     //Crie uma validação para os campos de e-mail e senha.
@@ -58,3 +66,11 @@ botao.addEventListener("click", function(e){
 
 
 }); 
+
+
+
+
+
+
+
+
